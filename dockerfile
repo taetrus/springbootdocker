@@ -4,7 +4,7 @@ FROM eclipse-temurin:17
 WORKDIR /opt/dockerapp
 
 # Refer to Maven build -> finalName
-ARG JAR_FILE=target/springbootdocker-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/springbootdocker-0.0.2-SNAPSHOT.jar
 
 # cp target/spring-boot-docker-0.0.1-SNAPSHOT.jar /opt/dockerapp/dockerapp.jar
 COPY ${JAR_FILE} dockerapp.jar
